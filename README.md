@@ -7,7 +7,10 @@ In this project, I demonstrated my proficiency with various features in excel in
 Louise, an up-and-coming playwright, wants to start a crowd funding campaign to fund her play *FEVER* which she estimates will cost over $10,000. The following report highlights specfic factors that lead to a successful campaign.     
 
 ---
-## Analysis and Challenges
+## Results
+Results:
+
+There is a description of how to perform a search, with images. (4 pt)
 ### Analysis
 I organized the data to see if the month the kickstarter launched could impact its success. First, I made the data more detailed by splitting the Category and Subcategory column into two distinct columns. This allowed me to view the wider category of theater and later the narrower subcategory plays. Next, I converted Unix timestamps to identify the launch date. For example, I turned the cell **1434931811** into **06/22/15** using the code =(((J2/60)/60)/24)+DATE(1970,1,1). Finally, I created a pivot table that filtered based on "Parent Category" and "Years." From that pivot table I created the line graph shown below. 
 
@@ -31,7 +34,11 @@ Based on the line graph above, I had the following takeways about play campaigns
 One challenge I encountered in writing my countifs formula was ensuring that I only counted the *plays*. Initially, my formula =COUNTIFS('Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful") counted every subcategory so I had to add an additional criteria and changed my formula to =COUNTIFS('Raw Data'!$O:$O, "plays",'Raw Data'!$D:$D, ">=1000", 'Raw Data'!$D:$D, "<5000", 'Raw Data'!$F:$F, "successful"). 
 
 ---
-## Results
+## Summary
+Summary:
+
+The summary addresses one drawback of this webpage (2 pt)
+The summary addresses two additional recommendations for further development (4 pt)
 ### My Reccomendation 
 According to the data, Louise's play with a funding goal of $10,000 should be launched in May, June, or July and avoid a launch in October or December. Her current funding goal has a 54% chance of succeeding. If she could cut costs in half, her success rate would increase to approximately 70%. 
 
